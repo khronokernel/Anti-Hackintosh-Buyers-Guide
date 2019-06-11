@@ -10,9 +10,9 @@ Hyperlinks:
 * [Cooler](README.md#Cooler)
 * [Networking](README.md#Networking)
 * [Wireless](README.md#Wireless)
-* [Power Supply](README.md#power-supply)
-* [Case](README.md#case)
-* [Thermal Paste](README.md#Thermal-paste)
+* [Power Supply](README.md#Power-Supply)
+* [Case](README.md#Case)
+* [Thermal Paste](README.md#Thermal-Paste)
 
 # An introduction
 
