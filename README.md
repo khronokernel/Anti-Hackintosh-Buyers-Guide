@@ -122,7 +122,13 @@ Maxwell
 
 # Motherboards
 
-Dick Butt
+So with motherboards the main thing to keep in mind is what controller your sytem is running, specificaly:
+
+* Networking Interface Controller (Ethernet)
+* Audio Interface Controller
+* USB Controllers
+
+
 
 # Storage
 
@@ -133,3 +139,15 @@ Dick Butt
 # Networking
 
 # Wireless
+
+# Power Supply
+
+If it has RGB in it, I will personally come to your house and ~~force a Unibeast installer down your throat~~ educate you on why RGB power supplies are a poor way to spend your money
+
+# Case
+
+If your shoe fits in it, your hack will likely boot in it
+
+# Thermla Paste
+
+Don't use tooth paste, that's all I got to say. Nutella is the way to go
