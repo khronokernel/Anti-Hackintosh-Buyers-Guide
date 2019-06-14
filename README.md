@@ -43,7 +43,8 @@ If you don't want a headache, stay away from all Nvidia GPU that aren't kepler b
 
 With AMD, Navi GPUs drivers are currently not included in either macOS Mojave 10.14.6 nor macOS Catalina 10.15 so please hold off until these GPUs have drivers included in macOS. And Lexa based AMD GPUs like the RX 550 have never had support
 
-For GPUs we recommend, check out the [Mojave GPU Buyers Guide](https://www.reddit.com/r/hackintosh/comments/b91vf5/mojave_gpu_buyers_guide/) and the soon to come Catalina GPU Buyers Guide
+For GPUs we recommend, check out the [Mojave GPU Buyers Guide](https://www.reddit.com/r/hackintosh/comments/b91vf5/mojave_gpu_buyers_guide/) and the soon to come [Catalina GPU Buyers Guide](https://github.com/khronokernel/Catalina-GPU-Buyers-Guide)
+And for those who are running unspported GPUs, there's still hope for you! With my patent pending [**How to disable your unsupported Nvidia GPU for macOS Guide**](https://github.com/khronokernel/How-to-disable-your-unsupported-GPU-for-MacOS/blob/master/README.md), even a simpleton like you can experice the glories of Mojave and beyond!
 
 **GPUs That Aren't Supported AT ALL**
 
@@ -132,6 +133,11 @@ So with motherboards the main thing to keep in mind is what controller your syte
 
 # Storage
 
+Storage is a section that can be quite confusing as there a lot of mixed reports regarding PCIe/NVMe based devices, manyy of these reports are based off old information from back when PCIe/NVMe drives were not natively supported like block size mattering or require kexts/.efi drivers. Well High Sierra brought native support for these types of drives but certain ones still do not work and can cause iinstability if not removed/blocked out at an ACPI level. These drives include the following:
+
+* Samsung PM981 (Commonly found in OEM systems like laptops)
+* Samsung 970 Evo Plus (While not natively supported OOB, a [firmware update from Samsung](https://www.samsung.com/semiconductor/minisite/ssd/download/tools/) will allow these drives to operate in macOS without issue)
+
 # RAM
 
 With RAM, it's generally the same logic for Windows: Make sure the CPU's memory controller can support the speeds you wish to run. macOS seems to be a bit more memory sensitive than Windows so you may get random lock-ups/kernel panics and the more memory you add, the more you need to lower the frequency to ease the memory controller. Generally 32GB 3000Mhz will run just fine on an i7 8700k but an i7 6700k may have to drop to 2666Mhz
@@ -141,6 +147,8 @@ With RAM, it's generally the same logic for Windows: Make sure the CPU's memory 
 # Networking
 
 # Wireless
+
+For wireless, keep in mind that macOS has a very limited selection for native Wifi and Bluetooth cards. The [r/Hackintosh FAQ](https://www.reddit.com/r/hackintosh/wiki/faq#wiki_wifi_compatibility) has a great list on supported models
 
 # Power Supply
 
