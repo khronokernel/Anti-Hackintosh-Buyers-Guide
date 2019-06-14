@@ -134,6 +134,8 @@ So with motherboards the main thing to keep in mind is what controller your syte
 
 # RAM
 
+With RAM, it's generally the same logic for Windows: Make sure the CPU's memory controller can support the speeds you wish to run. macOS seems to be a bit more memory sensitive than Windows so you may get random lock-ups/kernel panics and the more memory you add, the more you need to lower the frequency to ease the memory controller. Generally 32GB 3000Mhz will run just fine on an i7 8700k but an i7 6700k may have to drop to 2666Mhz
+
 # Cooler
 
 # Networking
