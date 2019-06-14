@@ -158,6 +158,6 @@ If it has RGB in it, I will personally come to your house and ~~force a Unibeast
 
 If your shoe fits in it, your hack will likely boot in it
 
-# Thermla Paste
+# Thermal Paste
 
 Don't use tooth paste, that's all I got to say. Nutella is the way to go
