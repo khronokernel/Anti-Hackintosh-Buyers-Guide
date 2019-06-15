@@ -37,7 +37,7 @@ With intel, the thanks to most of the CPUs being quite similar they have support
 
 # GPUs
 
-~~Get an RTX GPU, I want to see people suffer as they slowly realize that they don't even have suprt in HighSierra. Let the Nvidia fans die a slow and painful death, let this be a reminder to never cross our lord and savior Tim Apple~~
+~~Get an RTX GPU, I want to see people suffer as they slowly realize that they don't even have support in HighSierra. Let the Nvidia fans die a slow and painful death, let this be a reminder to never cross our lord and savior Tim Apple~~
 If you don't want a headache, stay away from all Nvidia GPU that aren't kepler based. Currently(and likely forever), Turing and Volta GPUs have no support whatsoever in any version of macOS while Pascal and Maxwell have their support stopping in High Sierra while also requiring WebDrivers so they're not native GPUs.
 
 With AMD, Navi GPUs drivers are currently not included in either macOS Mojave 10.14.6 nor macOS Catalina 10.15 Developer Beta 1 so please hold off until these GPUs have drivers included in macOS. And Lexa based AMD GPUs like the RX 550 have never had support
@@ -167,7 +167,14 @@ Keep in mind that with an AIO and any cooler that relies on USB will generally h
 
 # Networking
 
-This section is specifcally for dedicated NICs, generally
+This section is specifcally for dedicated NICs, generally most networking is supported either natively, like with Aquantia 10Gbe NIC, or has drivers provided Mieze([IntelMausiEthernet.kext](https://github.com/Mieze/IntelMausiEthernet), [AtherosE2200Ethernet.kext](https://github.com/Mieze/AtherosE2200Ethernet) and [RealtekRTL8111.kext ](https://github.com/Mieze/RTL8111_driver_for_OS_X)). The issues comes in when you either involve on-board server NICs or dedicated hardware like Mellanox's MNPA19-XTR 10Gbe NIC. You need to be quite vigalinte and see if of the manufactures have developed drivers, or take the safe route and grab a 10Gbe Auqantia NIC as these are shipped in the iMacPro1,1 so full native support. [SmallTree](https://www.small-tree.com/categories/10gb-ethernet-cards/) is the other popular option
+
+**NICs cards to avoid**
+
+* Intel Server NICs(including both 1Gbe and 10Gbe)
+* HP Server NICs(including both 1Gbe and 10Gbe, generally rebranded Qlogic)
+* Dell Server NICs(including both 1Gbe and 10Gbe, generally rebranded Broadcom or Intel)
+* Mellanox NICs
 
 # Wireless
 
@@ -175,7 +182,7 @@ For wireless, keep in mind that macOS has a very limited selection for native Wi
 
 **Wireless cards to avoid**
 
-* Any Intel based wireless
+* Any Intel based wireless(Bluetooth sometimes works but it's inconcistent and seems to be on a per system basis)
 * Any killer based wireless
 
 # Power Supply
