@@ -143,11 +143,16 @@ But where the real issues come in are when we look towards server boards and non
 
 # Storage
 
-Storage is a section that can be quite confusing as there a lot of mixed reports regarding PCIe/NVMe based devices, manyy of these reports are based off old information from back when PCIe/NVMe drives were not natively supported like block size mattering or require kexts/.efi drivers. Well High Sierra brought native support for these types of drives but certain ones still do not work and can cause iinstability if not removed/blocked out at an ACPI level. These drives include the following:
+Storage is a section that can be quite confusing as there a lot of mixed reports regarding PCIe/NVMe based devices, manyy of these reports are based off old information from back when PCIe/NVMe drives were not natively supported like block size mattering or require kexts/.efi drivers. Well High Sierra brought native support for these types of drives but certain ones still do not work and can cause instability if not removed/blocked out at an ACPI level. These drives include the following:
+
+**SSDs that aren't supported AT ALL**
 
 * Samsung PM981 (Commonly found in OEM systems like laptops)
-* Samsung 970 Evo Plus (While not natively supported OOB, a [firmware update from Samsung](https://www.samsung.com/semiconductor/minisite/ssd/download/tools/) will allow these drives to operate in macOS without issue)
 * Any eMMC based SSD(Commonly found in netbooks)
+
+**SSDs to avoid**
+
+* Samsung 970 Evo Plus (While not natively supported OOB, a [firmware update from Samsung](https://www.samsung.com/semiconductor/minisite/ssd/download/tools/) will allow these drives to operate in macOS without issue)
 
 # RAM
 
@@ -157,13 +162,21 @@ With RAM, it's generally the same logic for Windows: Make sure the CPU's memory 
 
 Keep in mind that with an AIO and any cooler that relies on USB will generally have their fan curves, pump speed and RGB lighting reset when booting macOS. Some users in the comunity may have developed a driver/applcation for controlling your model of AIO but do your research to know if yours is affect/has a solution. Solutin for this is to control the fans and pump speed with the motherboard instead
 
+**Coolers to avoid**
+* No specific models or manufactures but do your research
+
 # Networking
 
 This section is specifcally for dedicated NICs, generally
 
 # Wireless
 
-For wireless, keep in mind that macOS has a very limited selection for native Wifi and Bluetooth cards. The [r/Hackintosh FAQ](https://www.reddit.com/r/hackintosh/wiki/faq#wiki_wifi_compatibility) has a great list on supported models
+For wireless, keep in mind that macOS has a very limited selection for native Wifi and Bluetooth cards but Midi has a great list on supported models that you can find in the [r/Hackintosh FAQ](https://www.reddit.com/r/hackintosh/wiki/faq#wiki_wifi_compatibility). But for those who are either motherboard shopping or just looking for dedicated wireless will need to keep in mind that the following wireless cards are not supported:
+
+**Wireless cards to avoid**
+
+* Any Intel based wireless
+* Any killer based wireless
 
 # Power Supply
 
