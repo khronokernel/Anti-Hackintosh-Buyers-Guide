@@ -1,5 +1,4 @@
 # Anti-Hackintosh-Buyers-Guide
-A guide on what not to buy for Hackintoshes
 
 Hyperlinks:
 * [CPU](README.md#CPU)
@@ -129,7 +128,18 @@ So with motherboards the main thing to keep in mind is what controller your syte
 * Audio Interface Controller
 * USB Controllers
 
+With audio and ethernet, most boards are supported and you can find a more extensive list from [AppleALC](https://github.com/acidanthera/AppleALC/wiki/Supported-codecs) for audio and going through Mieze's ethernet kexts for networking([IntelMausiEthernet.kext](https://github.com/Mieze/IntelMausiEthernet), [AtherosE2200Ethernet.kext](https://github.com/Mieze/AtherosE2200Ethernet) and [RealtekRTL8111.kext ](https://github.com/Mieze/RTL8111_driver_for_OS_X)). And there's patches for usnspported USB. 
 
+But where the real issues come in are when we look towards server boards and non-Z370 300 series motherboards. Server boards don't like to play nicely with macOS so users often opt for running a hypervisor in between to avoid issues with but it still is possible to run macOS natively if you're willing to put the effort in. Non-Z370 300 series motherboards have the issues where nvram, audio and onboard video out don't correectly and require more work to function with onboard video sometimes not fixable even with manual connector patches through WhateverGreen. NVRAM can be solved with either EmuVariableUEFI-64.efi or with [OpenCorePkg](https://github.com/khronokernel/Getting-Started-With-OpenCore)(OC is still in early alpha so avoid unless you like pain)
+
+**Motherboards To Avoid**
+* C612 (generally seen in server boards)
+* B360
+* B365
+* H310
+* H370
+* Q370
+* Z390
 
 # Storage
 
@@ -137,12 +147,15 @@ Storage is a section that can be quite confusing as there a lot of mixed reports
 
 * Samsung PM981 (Commonly found in OEM systems like laptops)
 * Samsung 970 Evo Plus (While not natively supported OOB, a [firmware update from Samsung](https://www.samsung.com/semiconductor/minisite/ssd/download/tools/) will allow these drives to operate in macOS without issue)
+* Any eMMC based SSD(Commonly found in netbooks)
 
 # RAM
 
-With RAM, it's generally the same logic for Windows: Make sure the CPU's memory controller can support the speeds you wish to run. macOS seems to be a bit more memory sensitive than Windows so you may get random lock-ups/kernel panics and the more memory you add, the more you need to lower the frequency to ease the memory controller. Generally 32GB 3000Mhz will run just fine on an i7 8700k but an i7 6700k may have to drop to 2666Mhz
+With RAM, it's generally the same logic for Windows: Make sure the CPU's memory controller can support the speeds you wish to run. macOS seems to be a bit more memory sensitive than Windows so you may get random lock-ups/kernel panics and the more memory you add, the more you need to lower the frequency to ease the memory controller. Generally 32GB 3000Mhz will run just fine on an i7 8700k but an i7 6700k may have to drop to 2666Mhz for stablity reasons
 
 # Cooler
+
+Keep in mind that with an AIO and any cooler that relies on USB will generally have their fan curves, pump speed and RGB lighting reset when booting macOS. Some users in the comunity may have developed a driver/applcation for controlling your model of AIO but do your research to know if yours is affect/has a solution. Solutin for this is to control the fans and pump speed with the motherboard instead
 
 # Networking
 
