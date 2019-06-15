@@ -159,13 +159,16 @@ Keep in mind that with an AIO and any cooler that relies on USB will generally h
 
 # Networking
 
+This section is specifcally for dedicated NICs, generally
+
 # Wireless
 
 For wireless, keep in mind that macOS has a very limited selection for native Wifi and Bluetooth cards. The [r/Hackintosh FAQ](https://www.reddit.com/r/hackintosh/wiki/faq#wiki_wifi_compatibility) has a great list on supported models
 
 # Power Supply
 
-If it has RGB in it, I will personally come to your house and ~~force a Unibeast installer down your throat~~ educate you on why RGB power supplies are a poor way to spend your money
+~~If it has RGB in it, I will personally come to your house and force a Unibeast installer down your throat~~ 
+Just don't cheap out on your PSU but be reasonable with what you buy, RGB aint a good purchacing decision
 
 # Case
 
