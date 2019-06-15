@@ -21,7 +21,7 @@ So what is the Anti-Hackintosh Buyers Guide and why should you care about this p
 
 **CPUs to avoid:**
 
-While AMD CPUs can work but we advise highly against them due to numerous issues still plaguing them as they're not natively supported. They require quite a bit more work to get setup but for those who like pain there is the [AMD Vanilla Guide](https://vanilla.amd-osx.com)
+While AMD CPUs can work but we advise against them due to numerous issues still plaguing them as they're not natively supported. They require quite a bit more work to get setup but for those who like would prefer AMD there is the [AMD Vanilla Guide](https://vanilla.amd-osx.com)
 
 * AMD Ryzen 1000 Series
 * AMD Ryzen 2000 Series
@@ -43,7 +43,7 @@ If you don't want a headache, stay away from all Nvidia GPUs that aren't Kepler 
 With AMD, Navi GPUs drivers are currently not included in either macOS Mojave 10.14.6 nor macOS Catalina 10.15 Developer Beta 1 so please hold off until these GPUs have drivers included in macOS. And Lexa based AMD GPUs like the RX 550 have never had support
 
 For GPUs we recommend, check out the [Mojave GPU Buyers Guide](https://www.reddit.com/r/hackintosh/comments/b91vf5/mojave_gpu_buyers_guide/) and the soon to come [Catalina GPU Buyers Guide](https://github.com/khronokernel/Catalina-GPU-Buyers-Guide)
-And for those who are running unsupported GPUs, there's still hope for you! With my patent pending [**How to disable your unsupported Nvidia GPU for macOS Guide**](https://github.com/khronokernel/How-to-disable-your-unsupported-GPU-for-MacOS/blob/master/README.md), even a simpleton like you can experience the glories of Mojave and beyond!
+And for those who are running unsupported GPUs, there's still hope for you! With my patent pending [**How to disable your unsupported GPU for macOS Guide**](https://github.com/khronokernel/How-to-disable-your-unsupported-GPU-for-MacOS/blob/master/README.md), even a simpleton like you can experience the glories of Mojave and beyond!
 
 **GPUs that aren't supported AT ALL**
 
@@ -183,7 +183,11 @@ For wireless, keep in mind that macOS has a very limited selection for native Wi
 **Wireless cards that aren't supported AT ALL**
 
 * Any Intel based wireless(Bluetooth sometimes works but it's inconcistent and seems to be on a per system basis)
-* Any killer based wireless
+* Any Killer based wireless
+
+**Wireless cards to avoid**
+
+* Any USB based(Ralink and Realtek) as these generally aren't as reliable and some macOS functions like Hand-Off and AppleWatch Unlock may not function correctly
 
 # Power Supply
 
