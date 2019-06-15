@@ -171,7 +171,7 @@ This section is specifcally for dedicated NICs, generally most networking is sup
 
 **NICs cards to avoid**
 
-* Intel Server NICs(including both 1Gbe and 10Gbe)
+* Intel Server NICs(including both 1Gbe and 10Gbe, there's work arounds for X520 and X540 NICs)
 * HP Server NICs(including both 1Gbe and 10Gbe, generally rebranded Qlogic)
 * Dell Server NICs(including both 1Gbe and 10Gbe, generally rebranded Broadcom or Intel)
 * Mellanox NICs
