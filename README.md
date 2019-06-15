@@ -15,20 +15,20 @@ Hyperlinks:
 
 # An introduction
 
-So what is the Anti Hackintosh Buyers Guide and why should you care about this post? Well this is a guide of what not to buy whne building a hackintosh and will be kept up-to-date as new hardwrae comes out. While this guide won't give exact recommendations, it'll try and point you in the right direction.
+So what is the Anti-Hackintosh Buyers Guide and why should you care about this post? Well, this is a guide of what not to buy when building a Hackintosh and will be kept up-to-date as new hardware comes out. While this guide won't give exact recommendations, it'll try and point you in the right direction.
 
 # CPUs
 
 **CPUs To Avoid:**
 
-While AMD CPUs can work but we advise highly agaisnt them due to numerous issues still plaguing them as they're not natively supported. They require quite a bit more work to get setup but for those who like pain there is the [AMD Vanilla Guide](https://vanilla.amd-osx.com)
+While AMD CPUs can work but we advise highly against them due to numerous issues still plaguing them as they're not natively supported. They require quite a bit more work to get setup but for those who like pain there is the [AMD Vanilla Guide](https://vanilla.amd-osx.com)
 
 * AMD Ryzen 1000 Series
 * AMD Ryzen 2000 Series
 * AMD Ryzen 3000 Series
 * AMD FX Series
 
-With intel, the thanks to most of the CPUs being quite similar they have support when the CPU is spoofed to a supported model. The only downside is that the iGPU rarely work on these models meaning a cheap iGPU hackintosh is impossible with these CPUs. 
+With Intel, the thanks to most of the CPUs being quite similar they have support when the CPU is spoofed to a supported model. The only downside is that the iGPU rarely work on these models meaning a cheap iGPU Hackintosh is impossible with these CPUs. 
 
 * Intel Atoms
 * Intel Celerons
@@ -37,13 +37,13 @@ With intel, the thanks to most of the CPUs being quite similar they have support
 
 # GPUs
 
-~~Get an RTX GPU, I want to see people suffer as they slowly realize that they don't even have support in HighSierra. Let the Nvidia fans die a slow and painful death, let this be a reminder to never cross our lord and savior Tim Apple~~
-If you don't want a headache, stay away from all Nvidia GPU that aren't kepler based. Currently(and likely forever), Turing and Volta GPUs have no support whatsoever in any version of macOS while Pascal and Maxwell have their support stopping in High Sierra while also requiring WebDrivers so they're not native GPUs.
+~~Get an RTX GPU, I want to see people suffer as they slowly realize that they don't even have support in HighSierra. Let the Nvidia fans die a slow and painful death, let this be a reminder to never cross our lord and saviour Tim Apple~~
+If you don't want a headache, stay away from all Nvidia GPUs that aren't Kepler based. Currently(and likely forever), Turing and Volta GPUs have no support whatsoever in any version of macOS while Pascal and Maxwell have their support stopping in High Sierra while also requiring WebDrivers so they're not native GPUs.
 
 With AMD, Navi GPUs drivers are currently not included in either macOS Mojave 10.14.6 nor macOS Catalina 10.15 Developer Beta 1 so please hold off until these GPUs have drivers included in macOS. And Lexa based AMD GPUs like the RX 550 have never had support
 
 For GPUs we recommend, check out the [Mojave GPU Buyers Guide](https://www.reddit.com/r/hackintosh/comments/b91vf5/mojave_gpu_buyers_guide/) and the soon to come [Catalina GPU Buyers Guide](https://github.com/khronokernel/Catalina-GPU-Buyers-Guide)
-And for those who are running unspported GPUs, there's still hope for you! With my patent pending [**How to disable your unsupported Nvidia GPU for macOS Guide**](https://github.com/khronokernel/How-to-disable-your-unsupported-GPU-for-MacOS/blob/master/README.md), even a simpleton like you can experice the glories of Mojave and beyond!
+And for those who are running unsupported GPUs, there's still hope for you! With my patent pending [**How to disable your unsupported Nvidia GPU for macOS Guide**](https://github.com/khronokernel/How-to-disable-your-unsupported-GPU-for-MacOS/blob/master/README.md), even a simpleton like you can experience the glories of Mojave and beyond!
 
 **GPUs That Aren't Supported AT ALL**
 
@@ -122,7 +122,7 @@ Maxwell
 
 # Motherboards
 
-So with motherboards the main thing to keep in mind is what controller your sytem is running, specificaly:
+So with motherboards, the main thing to keep in mind is what controller your system is running, specifically:
 
 * Networking Interface Controller (Ethernet)
 * Audio Interface Controller
@@ -130,7 +130,7 @@ So with motherboards the main thing to keep in mind is what controller your syte
 
 With audio and ethernet, most boards are supported and you can find a more extensive list from [AppleALC](https://github.com/acidanthera/AppleALC/wiki/Supported-codecs) for audio and going through Mieze's ethernet kexts for networking([IntelMausiEthernet.kext](https://github.com/Mieze/IntelMausiEthernet), [AtherosE2200Ethernet.kext](https://github.com/Mieze/AtherosE2200Ethernet) and [RealtekRTL8111.kext ](https://github.com/Mieze/RTL8111_driver_for_OS_X)). And there's patches for usnspported USB with XHCI-unsupported.kext(which can be found within [Rehabman's USBInjectAll's project](https://github.com/RehabMan/OS-X-USB-Inject-All))
 
-But where the real issues come in are when we look towards server boards and non-Z370 300 series motherboards. Server boards don't like to play nicely with macOS so users often opt for running a hypervisor in between to avoid issues with but it still is possible to run macOS natively if you're willing to put the effort in. Non-Z370 300 series motherboards have the issues where nvram, audio and onboard video out don't correectly and require more work to function with onboard video sometimes not fixable even with manual connector patches through WhateverGreen. NVRAM can be solved with either EmuVariableUEFI-64.efi or with [OpenCorePkg](https://github.com/khronokernel/Getting-Started-With-OpenCore)(OC is still in early alpha so avoid unless you like pain)
+But where the real issues come in are when we look towards server boards and non-Z370 300 series motherboards. Server boards don't like to play nicely with macOS so users often opt for running a hypervisor in between to avoid issues with but it still is possible to run macOS natively if you're willing to put the effort in. Non-Z370 300 series motherboards have the issues where nvram, audio and onboard video out don't correctly and require more work to function with onboard video sometimes not fixable even with manual connector patches through WhateverGreen. NVRAM can be solved with either EmuVariableUEFI-64.efi or with [OpenCorePkg](https://github.com/khronokernel/Getting-Started-With-OpenCore)(OC is still in early alpha so avoid unless you like pain)
 
 **Motherboards To Avoid**
 * C612 (generally seen in server boards)
@@ -143,7 +143,7 @@ But where the real issues come in are when we look towards server boards and non
 
 # Storage
 
-Storage is a section that can be quite confusing as there a lot of mixed reports regarding PCIe/NVMe based devices, manyy of these reports are based off old information from back when PCIe/NVMe drives were not natively supported like block size mattering or require kexts/.efi drivers. Well High Sierra brought native support for these types of drives but certain ones still do not work and can cause instability if not removed/blocked out at an ACPI level. These drives include the following:
+Storage is a section that can be quite confusing as there a lot of mixed reports regarding PCIe/NVMe based devices, many of these reports are based off old information from back when PCIe/NVMe drives were not natively supported like block size mattering or require kexts/.efi drivers. Well, High Sierra brought native support for these types of drives but certain ones still do not work and can cause instability if not removed/blocked out at an ACPI level. These drives include the following:
 
 **SSDs that aren't supported AT ALL**
 
@@ -156,18 +156,18 @@ Storage is a section that can be quite confusing as there a lot of mixed reports
 
 # RAM
 
-With RAM, it's generally the same logic for Windows: Make sure the CPU's memory controller can support the speeds you wish to run. macOS seems to be a bit more memory sensitive than Windows so you may get random lock-ups/kernel panics and the more memory you add, the more you need to lower the frequency to ease the memory controller. Generally 32GB 3000Mhz will run just fine on an i7 8700k but an i7 6700k may have to drop to 2666Mhz for stablity reasons
+With RAM, it's generally the same logic for Windows: Make sure the CPU's memory controller can support the speeds you wish to run. macOS seems to be a bit more memory sensitive than Windows so you may get random lock-ups/kernel panics and the more memory you add, the more you need to lower the frequency to ease the memory controller. Generally, 32GB 3000Mhz will run just fine on an i7 8700k but an i7 6700k may have to drop to 2666Mhz for stability reasons
 
 # Cooler
 
-Keep in mind that with an AIO and any cooler that relies on USB will generally have their fan curves, pump speed and RGB lighting reset when booting macOS. Some users in the comunity may have developed a driver/applcation for controlling your model of AIO but do your research to know if yours is affect/has a solution. Solutin for this is to control the fans and pump speed with the motherboard instead
+Keep in mind that with an AIO and any cooler that relies on USB will generally have their fan curves, pump speed and RGB lighting reset when booting macOS. Some users in the community may have developed a driver/application for controlling your model of AIO but do your research to know if yours is affected/has a solution. Solution for this is to control the fans and pump speed with the motherboard instead
 
 **Coolers to avoid**
 * No specific models or manufactures but do your research
 
 # Networking
 
-This section is specifcally for dedicated NICs, generally most networking is supported either natively, like with Aquantia, or has drivers provided Mieze([IntelMausiEthernet.kext](https://github.com/Mieze/IntelMausiEthernet), [AtherosE2200Ethernet.kext](https://github.com/Mieze/AtherosE2200Ethernet) and [RealtekRTL8111.kext ](https://github.com/Mieze/RTL8111_driver_for_OS_X)). The issues comes in when you either involve on-board server NICs or dedicated hardware like Mellanox's MNPA19-XTR 10Gbe NIC. You need to be quite vigalinte and see if either the manufactures or the hackintosh community have developed drivers, or instead you can take the safe route and grab a 10Gbe Aquantia AQtion AQC-107 NIC as these are shipped in the iMacPro1,1 so full native support. [SmallTree](https://www.small-tree.com/categories/10gb-ethernet-cards/) is the other popular option
+This section is specifically for dedicated NICs, generally most networking is supported either natively, like with Aquantia, or has drivers provided Mieze([IntelMausiEthernet.kext](https://github.com/Mieze/IntelMausiEthernet), [AtherosE2200Ethernet.kext](https://github.com/Mieze/AtherosE2200Ethernet) and [RealtekRTL8111.kext ](https://github.com/Mieze/RTL8111_driver_for_OS_X)). The issues come in when you either involve onboard server NICs or dedicated hardware like Mellanox's MNPA19-XTR 10Gbe NIC. You need to be quite vigilante and see if either the manufactures or the Hackintosh community have developed drivers, or instead, you can take the safe route and grab a 10Gbe Aquantia AQtion AQC-107 NIC as these are shipped in the iMacPro1,1 so full native support. [SmallTree](https://www.small-tree.com/categories/10gb-ethernet-cards/) is the other popular option
 
 **NICs cards to avoid**
 
@@ -188,7 +188,7 @@ For wireless, keep in mind that macOS has a very limited selection for native Wi
 # Power Supply
 
 ~~If it has RGB in it, I will personally come to your house and force a Unibeast installer down your throat~~ 
-Just don't cheap out on your PSU but be reasonable with what you buy, RGB aint a good purchacing decision
+Just don't cheap out on your PSU but be reasonable with what you buy, RGB ain't a good purchasing decision
 
 # Case
 
