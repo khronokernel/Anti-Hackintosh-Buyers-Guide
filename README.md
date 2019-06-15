@@ -48,6 +48,12 @@ With AMD, Navi GPUs drivers are currently not included in either macOS Mojave 10
 For GPUs we recommend, check out the [Mojave GPU Buyers Guide](https://www.reddit.com/r/hackintosh/comments/b91vf5/mojave_gpu_buyers_guide/) and the soon to come [Catalina GPU Buyers Guide](https://github.com/khronokernel/Catalina-GPU-Buyers-Guide)
 And for those who are running unsupported GPUs, there's still hope for you! With my patent pending [**How to disable your unsupported GPU for macOS Guide**](https://github.com/khronokernel/How-to-disable-your-unsupported-GPU-for-MacOS/blob/master/README.md), even a simpleton like you can experience the glories of Mojave and beyond!
 
+> Are there any GPU board partners I should avoid when buying a GPU? 
+Why I'm glad you asked, most manufactures actually have a pretty good track record with Hackintoshes but there's 3 specific brands to avoid:
+* XFX 
+* Powercolor
+* Sapphire(specifically when shopping Vega based GPUs, Polaris cards are some of the best for Hackintoshing)
+
 **GPUs that aren't supported AT ALL**
 
 Turing
