@@ -19,7 +19,7 @@ So what is the Anti-Hackintosh Buyers Guide and why should you care about this p
 
 # CPUs
 
-**CPUs To Avoid:**
+**CPUs to avoid:**
 
 While AMD CPUs can work but we advise highly against them due to numerous issues still plaguing them as they're not natively supported. They require quite a bit more work to get setup but for those who like pain there is the [AMD Vanilla Guide](https://vanilla.amd-osx.com)
 
@@ -45,7 +45,7 @@ With AMD, Navi GPUs drivers are currently not included in either macOS Mojave 10
 For GPUs we recommend, check out the [Mojave GPU Buyers Guide](https://www.reddit.com/r/hackintosh/comments/b91vf5/mojave_gpu_buyers_guide/) and the soon to come [Catalina GPU Buyers Guide](https://github.com/khronokernel/Catalina-GPU-Buyers-Guide)
 And for those who are running unsupported GPUs, there's still hope for you! With my patent pending [**How to disable your unsupported Nvidia GPU for macOS Guide**](https://github.com/khronokernel/How-to-disable-your-unsupported-GPU-for-MacOS/blob/master/README.md), even a simpleton like you can experience the glories of Mojave and beyond!
 
-**GPUs That Aren't Supported AT ALL**
+**GPUs that aren't supported AT ALL**
 
 Turing
 
@@ -79,7 +79,7 @@ Lexa
 * RX 540/X
 * RX 550/X
 
-**GPUs To Avoid**
+**GPUs to avoid**
 
 Pascal
 
@@ -132,7 +132,7 @@ With audio and ethernet, most boards are supported and you can find a more exten
 
 But where the real issues come in are when we look towards server boards and non-Z370 300 series motherboards. Server boards don't like to play nicely with macOS so users often opt for running a hypervisor in between to avoid issues with but it still is possible to run macOS natively if you're willing to put the effort in. Non-Z370 300 series motherboards have the issues where nvram, audio and onboard video out don't correctly and require more work to function with onboard video sometimes not fixable even with manual connector patches through WhateverGreen. NVRAM can be solved with either EmuVariableUEFI-64.efi or with [OpenCorePkg](https://github.com/khronokernel/Getting-Started-With-OpenCore)(OC is still in early alpha so avoid unless you like pain)
 
-**Motherboards To Avoid**
+**Motherboards to avoid**
 * C612 (generally seen in server boards)
 * B360
 * B365
@@ -180,7 +180,7 @@ This section is specifically for dedicated NICs, generally most networking is su
 
 For wireless, keep in mind that macOS has a very limited selection for native Wifi and Bluetooth cards but Midi has a great list on supported models that you can find in the [r/Hackintosh FAQ](https://www.reddit.com/r/hackintosh/wiki/faq#wiki_wifi_compatibility). But for those who are either motherboard shopping or just looking for dedicated wireless will need to keep in mind that the following wireless cards are not supported:
 
-**Wireless cards to avoid**
+**Wireless cards that aren't supported AT ALL**
 
 * Any Intel based wireless(Bluetooth sometimes works but it's inconcistent and seems to be on a per system basis)
 * Any killer based wireless
