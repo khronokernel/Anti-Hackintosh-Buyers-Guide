@@ -1,6 +1,6 @@
 # Anti-Hackintosh-Buyers-Guide
 
-This is an information thread, for dicussion please see the Reddit version of this post here: [Anti-Hackintosh Buyers Guide](https://www.reddit.com/r/hackintosh/comments/c0y312/antihackintosh_buyers_guide/)
+This is an information thread, for discussion please see the Reddit version of this post here: [Anti-Hackintosh Buyers Guide](https://www.reddit.com/r/hackintosh/comments/c0y312/antihackintosh_buyers_guide/)
 
 
 **Hyperlinks:**
