@@ -74,16 +74,20 @@ Why I'm glad you asked, most manufactures actually have a pretty good track reco
 Turing
 
 * Titan RTX
-* RTX 2080/Ti
+* RTX 2080 Ti
+* RTX 2080
+* RTX 2070 Super
 * RTX 2070
+* RTX 2060 Super
 * RTX 2060
-* GTX 1660/Ti
-* GTX 1650/Ti
+* GTX 1660 Ti
+* GTX 1660
+* GTX 1650
 
-* Quadro RTX 4000
-* Quadro RTX 5000
-* Quadro RTX 6000
 * Quadro RTX 8000
+* Quadro RTX 6000
+* Quadro RTX 5000
+* Quadro RTX 4000
 
 Volta
 
