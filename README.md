@@ -5,13 +5,23 @@ This is an information thread, for discussion please see the Reddit version of t
 
 **Hyperlinks:**
 * [CPU](README.md#CPU)
+   * CPUs to avoid
 * [GPU](README.md#GPU)
+   * GPUs that aren't supported AT ALL
+   * GPUs to avoid
 * [Motherboard](README.md#Motherboard)
+   * Chipsets to avoid
+   * Brands to avoid
 * [Storage](README.md#Storage)
+   * SSDs that aren't supported AT ALL
+   * SSDs to avoid
 * [RAM](README.md#RAM)
 * [Cooler](README.md#Cooler)
 * [Networking](README.md#Networking)
+   * NICs cards to avoid
 * [Wireless](README.md#Wireless)
+   * Wireless cards that aren't supported AT ALL
+   * Wireless cards to avoid
 * [Power Supply](README.md#Power-Supply)
 * [Case](README.md#Case)
 * [Thermal Paste](README.md#Thermal-Paste)
@@ -145,9 +155,9 @@ So with motherboards, the main thing to keep in mind is what controller your sys
 
 With audio and ethernet, most boards are supported and you can find a more extensive list from [AppleALC](https://github.com/acidanthera/AppleALC/wiki/Supported-codecs) for audio and going through Mieze's ethernet kexts for networking([IntelMausiEthernet.kext](https://github.com/Mieze/IntelMausiEthernet), [AtherosE2200Ethernet.kext](https://github.com/Mieze/AtherosE2200Ethernet) and [RealtekRTL8111.kext ](https://github.com/Mieze/RTL8111_driver_for_OS_X)). And there's patches for usnspported USB with XHCI-unsupported.kext(which can be found within [Rehabman's USBInjectAll's project](https://github.com/RehabMan/OS-X-USB-Inject-All))
 
-But where the real issues come in are when we look towards server boards and non-Z370 300 series motherboards. Server boards don't like to play nicely with macOS so users often opt for running a hypervisor in between to avoid issues with but it still is possible to run macOS natively if you're willing to put the effort in. Non-Z370 300 series motherboards have the issues where nvram, audio and onboard video out don't work correctly and require more work to function with onboard video sometimes not fixable even with manual connector patches through WhateverGreen. NVRAM can be solved with either EmuVariableUEFI-64.efi or with [OpenCorePkg](https://github.com/khronokernel/Getting-Started-With-OpenCore)(OC is still in early alpha so avoid unless you like pain). While there are workarounds for this platform, anytime you're not running native hardware means there's one more point of failure. Yes, others may have gotten their systems to run but keep in mind that the more complicated an EFI gets, the more places you'll need to examine when troubleshooting and the hardware it is for users of the community to help you.
+But where the real issues come in are when we look towards server boards and non-Z370 300 series motherboards. Server boards don't like to play nicely with macOS so users often opt for running a hypervisor in between to avoid issues with but it still is possible to run macOS natively if you're willing to put the effort in. Non-Z370 300 series motherboards have the issues where nvram, audio and onboard video out don't work correctly and require more work to function with onboard video sometimes not fixable even with manual connector patches through WhateverGreen. NVRAM can be solved with either EmuVariableUEFI-64.efi or with [OpenCorePkg](https://github.com/khronokernel/Getting-Started-With-OpenCore)(OC is still in early alpha so avoid unless you like pain). While there are workarounds for this platform, anytime you're not running native hardware means there's one more point of failure. Yes, others may have gotten their systems to run but keep in mind that the more complicated an EFI gets, the more places you'll need to examine when troubleshooting and the harder it is for users of the community to help you.
 
-**Motherboards to avoid**
+**Chipsets to avoid**
 * C612 (generally seen in server boards)
 * B360
 * B365
@@ -155,6 +165,11 @@ But where the real issues come in are when we look towards server boards and non
 * H370
 * Q370
 * Z390
+
+**Brands to avoid**
+
+* MSI(Weird Memory Layout that can break AptioMemoryFix requiring you to use the OSX variant which isn't as stable)
+* AsRock(non-native USB controller)
 
 # Storage
 
