@@ -59,8 +59,8 @@ If you don't want a headache, stay away from all Nvidia GPUs that aren't Kepler 
 
 With AMD, Navi GPUs drivers are currently not included in either macOS Mojave 10.14.6 nor macOS Catalina 10.15 Developer Beta 1 so please hold off until these GPUs have drivers included in macOS. And Lexa based AMD GPUs like the RX 550 have never had support
 
-For GPUs we recommend, check out the [Mojave GPU Buyers Guide](https://www.reddit.com/r/hackintosh/comments/b91vf5/mojave_gpu_buyers_guide/) and the soon to come [Catalina GPU Buyers Guide](https://github.com/khronokernel/Catalina-GPU-Buyers-Guide)
-And for those who are running unsupported GPUs, there's still hope for you! With my patent pending [**How to disable your unsupported GPU for macOS Guide**](https://github.com/khronokernel/How-to-disable-your-unsupported-GPU-for-MacOS/blob/master/README.md), even a simpleton like you can experience the glories of Mojave and beyond!
+For GPUs we recommend, check out the [Mojave GPU Buyers Guide](https://www.reddit.com/r/hackintosh/comments/b91vf5/mojave_gpu_buyers_guide/) and the soon to come [Catalina GPU Buyers Guide](https://khronokernel-3.gitbook.io/catalina-gpu-buyers-guide/)
+And for those who are running unsupported GPUs, there's still hope for you! With my patent pending [**How to disable your unsupported GPU for macOS Guide**](https://khronokernel-4.gitbook.io/disable-unsupported-gpus/), even a simpleton like you can experience the glories of Mojave and beyond!
 
 > Are there any GPU board partners I should avoid when buying a GPU? 
 
