@@ -11,6 +11,8 @@ With audio and ethernet, most boards are supported and you can find a more exten
 
 But where the real issues come in are when we look towards server boards and non-Z370 300 series motherboards. Server boards don't like to play nicely with macOS so users often opt for running a hypervisor in between to avoid issues with but it still is possible to run macOS natively if you're willing to put the effort in. Non-Z370 300 series motherboards have the issues where nvram, audio and onboard video out don't work correctly and require more work to function with onboard video sometimes not fixable even with manual connector patches through WhateverGreen. NVRAM can be solved with either EmuVariableUEFI-64.efi or with [OpenCorePkg](https://github.com/khronokernel/Getting-Started-With-OpenCore)(OC is still in early alpha so avoid unless you like pain). While there are workarounds for this platform, anytime you're not running native hardware means there's one more point of failure. Yes, others may have gotten their systems to run but keep in mind that the more complicated an EFI gets, the more places you'll need to examine when troubleshooting and the harder it is for users of the community to help you.
 
+Another issue these platforms face is that they rely on OsxAptioFix2Drv-free2000 which is now concidered destructive to your system meaning build guides based of it are now invalid. More info can be found [here](https://www.reddit.com/r/hackintosh/comments/cfjyla/i_unleashed_a_plague_upon_you_guys_and_i_am_sorry/)
+
 **Chipsets to avoid**
 * C612 (generally seen in server boards)
 * B360
