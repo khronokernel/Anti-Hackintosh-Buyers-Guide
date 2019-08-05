@@ -13,7 +13,7 @@ And for those who are running unsupported GPUs, there's still hope for you! With
 > Are there any GPU board partners I should avoid when buying a GPU? 
 
 Why I'm glad you asked, most manufactures actually have a pretty good track record with Hackintoshes but there's 3 specific brands to avoid. While it is possible to install with these GPUs, there still is a high possibility of issues arising like instability and black screens:
-* XFX 
+* XFX(can work with CSM/legacy mode turned off, make sure it's in UEFI mode)
 * Powercolor
 * Sapphire(specifically when shopping Vega based GPUs, Polaris cards are some of the best for Hackintoshing)
 
