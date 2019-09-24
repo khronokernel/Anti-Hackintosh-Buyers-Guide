@@ -7,6 +7,6 @@ Storage is a section that can be quite confusing as there a lot of mixed reports
 * Samsung PM981 (Commonly found in OEM systems like laptops)
 * Any eMMC based SSD(Commonly found in netbooks)
 
-**SSDs to avoid**
+**SSDs that need extra attention**
 
-* Samsung 970 Evo Plus (While not natively supported OOB, a [firmware update from Samsung](https://www.samsung.com/semiconductor/minisite/ssd/download/tools/) will allow these drives to operate in macOS without issue)
+* Samsung 970 Evo Plus (On early versions of this SSD, a [firmware update from Samsung](https://www.samsung.com/semiconductor/minisite/ssd/download/tools/) is required to allow these drives to operate in macOS without issue)
