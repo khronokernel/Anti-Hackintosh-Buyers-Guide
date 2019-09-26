@@ -1,7 +1,15 @@
 **CPUs to avoid:**
 
-While AMD CPUs can work but we advise against them due to numerous issues still plaguing them as they're not natively supported. They require quite a bit more work to get setup but for those who like would prefer AMD there is the [AMD Vanilla Guide](https://vanilla.amd-osx.com). Do note that Adobe products and Virtual machines are 2 most common issues surrounding them.
+While AMD CPUs can work but we advise against them due to numerous issues still plaguing them as they're not natively supported. They require quite a bit more work to get setup but for those who like would prefer AMD there is the [AMD Vanilla Guide](https://vanilla.amd-osx.com). 
 
+Common issues with AMD:
+* Adobe Products don't always work and there is no fix for lightroom at the moment
+* Virtual Machine running off of AppleHV's framework will not work(ie: Parallels 15)
+* Microphone input is not availble with AppleALC requiring VoodooHDA(quite a bit worse audio quality and overall instability)
+* Audio Drift issues on Ryzen APUs(G series Chips)
+* Delayed updates
+
+AMD CPUs:
 * AMD Ryzen 1000 Series
 * AMD Ryzen 2000 Series
 * AMD Ryzen 3000 Series
@@ -18,4 +26,5 @@ With Intel, the thanks to most of the CPUs being quite similar they have support
 * Intel Pentiums
 * Intel X79/LGA 2011
 * Intel X99/LGA 2011-V3
+* Intel X299/LGA-2066
 `
