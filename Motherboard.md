@@ -25,7 +25,6 @@ While there are workarounds for this platform, anytime you're not running native
 * B365
 * H310
 * H370
-* Q370
 * Z390
 
 **Brands to avoid**
