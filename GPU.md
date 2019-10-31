@@ -44,11 +44,6 @@ Volta
 
 * Quadro GV100
 
-Navi 10
-
-* RX 5700
-* RX 5700 XT
-* RX 5700 XT 50th Anniversary Edition
 
 Lexa
 
@@ -56,6 +51,13 @@ Lexa
 * RX 550/X
 
 **GPUs to avoid**
+
+Navi 10
+
+* RX 5700
+* RX 5700 XT
+* RX 5700 XT 50th Anniversary Edition
+**Note**: Super buggy drivers in 10.15.1
 
 Pascal
 
