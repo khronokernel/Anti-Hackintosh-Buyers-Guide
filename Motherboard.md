@@ -8,7 +8,9 @@ So with motherboards, the main thing to keep in mind is what controller your sys
 * NVRAM
 * RTC vs AWAC
 
-With audio and ethernet, most boards are supported and you can find a more extensive list from [AppleALC](https://github.com/acidanthera/AppleALC/wiki/Supported-codecs) for audio and going through Mieze's ethernet kexts for networking([IntelMausiEthernet.kext](https://github.com/Mieze/IntelMausiEthernet), [AtherosE2200Ethernet.kext](https://github.com/Mieze/AtherosE2200Ethernet) and [RealtekRTL8111.kext](https://github.com/Mieze/RTL8111_driver_for_OS_X)). And there's patches for unsupported USB with XHCI-unsupported.kext(which can be found within [Rehabman's USBInjectAll's project](https://github.com/RehabMan/OS-X-USB-Inject-All))
+With audio and ethernet, most boards are supported and you can find a more extensive list from [AppleALC](https://github.com/acidanthera/AppleALC/wiki/Supported-codecs) for audio and going through Mieze's ethernet kexts for networking([IntelMausiEthernet.kext](https://github.com/Mieze/IntelMausiEthernet), [AtherosE2200Ethernet.kext](https://github.com/Mieze/AtherosE2200Ethernet) and [RealtekRTL8111.kext](https://github.com/Mieze/RTL8111_driver_for_OS_X)). Please see the Networking section of this guide for more details.
+
+And there's patches for unsupported USB with XHCI-unsupported.kext(which can be found within [Rehabman's USBInjectAll's project](https://github.com/RehabMan/OS-X-USB-Inject-All). See below for AMD Chipset note.
 
 But where the real issues come in are when we look towards server boards and non-Z370 300 series motherboards. Server boards don't like to play nicely with macOS so users often opt for running a hypervisor in between to avoid issues with but it still is possible to run macOS natively if you're willing to put the effort in. Non-Z370 300 series motherboards have the issues where nvram, audio and onboard video out don't work correctly and require more work to function with onboard video sometimes not fixable even with manual connector patches through WhateverGreen. NVRAM can be solved with either EmuVariableUEFI-64.efi or with [OpenCore](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/) + [FwRuntimeServices](https://github.com/acidanthera/AppleSupportPkg/releases). With RTC vs AWAC, macOS ouright won't boot with systems that have their clock using AWAC and most BIOS GUIs don't even show the option to change it. So we need to either [force RTC with an SSDT](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/AcpiSamples/SSDT-AWAC.dsl), [create a fake systems clock](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/AcpiSamples/SSDT-RTC0.dsl) or [patch it out](https://www.hackintosh-forum.de/forum/thread/39846-asrock-z390-taichi-ultimate/?pageNo=2)(both solutions are not ideal).
 
@@ -33,3 +35,12 @@ Note for HEDT: Support for these platforms including server boards are much bett
 
 * MSI(Weird Memory Layout and just really poor ACPI programming)
 * AsRock(non-native USB controller)
+
+
+## AMD Chipset boards
+
+While you've avoided my warning on CPUs, I suppose I can at least explain the issues with these boards:
+
+* Chipset differences mean nothing, an X570 will work just as bad as a B450
+* Brands also don't matter
+* USB is a hit or miss on AMD, you can try to [port map](https://github.com/khronokernel/Opencore-Vanilla-Desktop-Guide/blob/master/AMD/AMD-USB-map.md) them but note that all of them are not native
