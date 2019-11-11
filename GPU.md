@@ -5,16 +5,16 @@ If you don't want a headache, stay away from all Nvidia GPUs that aren't Kepler 
 
 ![WebDrivers](WebDrivers.gif)
 
-With AMD, Navi GPUs drivers are currently not included in either macOS Mojave 10.14.6 nor macOS Catalina 10.15 Developer Beta 1 so please hold off until these GPUs have drivers included in macOS. And Lexa based AMD GPUs like the RX 550 have never had support
-
 For GPUs we recommend, check out the [GPU Buyers Guide](https://khronokernel-3.gitbook.io/catalina-gpu-buyers-guide/)
 And for those who are running unsupported GPUs, there's still hope for you! With my patent pending [**How to disable your unsupported GPU for macOS Guide**](https://khronokernel-4.gitbook.io/disable-unsupported-gpus/), even a simpleton like you can experience the glories of Mojave and beyond!
 
 > Are there any GPU board partners I should avoid when buying a GPU? 
 
 Why I'm glad you asked, most manufactures actually have a pretty good track record with Hackintoshes but there's 2 specific brands to avoid. While it is possible to install with these GPUs, there still is a high possibility of issues arising like instability and black screens:
-* XFX(can work with CSM/legacy mode turned off, make sure it's in UEFI mode)
+* XFX(may work with CSM/legacy mode turned off, make sure it's in UEFI mode)
 * Powercolor
+
+Note: AMD Navi support is still quite finiky, with WhateverGreen not being updated yet
 
 **GPUs that aren't supported AT ALL**
 
