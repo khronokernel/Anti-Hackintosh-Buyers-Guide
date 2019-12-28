@@ -8,6 +8,7 @@ Common issues with AMD:
 * Microphone input is not availble with AppleALC requiring VoodooHDA(quite a bit worse audio quality and overall instability)
 * Audio Drift issues on Ryzen APUs(G series Chips)
 * Delayed updates
+* **3rd Gen Threadripper doesn't work at all**
 
 AMD CPUs:
 * AMD Ryzen 1000 Series
