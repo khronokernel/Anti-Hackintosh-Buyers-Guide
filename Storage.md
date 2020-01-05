@@ -16,9 +16,6 @@ And while not an issue anymore, do note that all of Apple's PCIe drives are 4k s
 **SSDs to avoid**
 
 Samsung:
-* Samsung 970 Evo Plus (While not natively supported OOB, a [firmware update from Samsung](https://www.samsung.com/semiconductor/minisite/ssd/download/tools/) will allow these drives to operate in macOS)
-* Samsung 970 Evo
-* Samsung 970 Pro
 * Samsung 960
 * Samsung 960 Pro
 * Samsung 950 Pro
@@ -30,3 +27,8 @@ Intel:
 
 Kingston:
 * Kingston A1000
+
+**Recommended SSDs**
+* Samsung 970 Evo Plus (While not natively supported OOB, a [firmware update from Samsung](https://www.samsung.com/semiconductor/minisite/ssd/download/tools/) will allow these drives to operate in macOS)
+* Samsung 970 Evo
+* Samsung 970 Pro
