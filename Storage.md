@@ -17,16 +17,5 @@ And while not an issue anymore, do note that all of Apple's PCIe drives are 4k s
 
 Samsung:
 * Samsung 970 Evo Plus (While not natively supported OOB, a [firmware update from Samsung](https://www.samsung.com/semiconductor/minisite/ssd/download/tools/) will allow these drives to operate in macOS)
-* Samsung 970 Evo
-* Samsung 970 Pro
-* Samsung 960
-* Samsung 960 Pro
-* Samsung 950 Pro
-* Samsung PM961
-* Samsung PM951
 
-Intel:
-* Intel 530
-
-Kingston:
-* Kingston A1000
+For all NVme SSDs, its recommended to use [NVMeFix.kext](https://github.com/acidanthera/NVMeFix) to fix power and energy consumption on these drives

@@ -20,7 +20,7 @@ AMD CPUs:
 
 With Intel, the thanks to most of the CPUs being quite similar they have support when the CPU is spoofed to a supported model. The only downside is that the iGPU rarely work on Atom/Pentium/Celeron these models meaning a cheap iGPU Hackintosh is impossible with these CPUs. Regarding X99/LGA 2011-V3 CPUs, there's the issue that these CPUs were never shipped in a real Mac so quite a few issues are present when running macOS on these systems. Avoid if possible
 
-**Dual Socket User Note**: Do note that macOS Catalina no longer supports dual socket CPUs and that the macOS kernel only supports a maximum of 64 threads. So for baller setups please be aware.
+**Dual Socket User Note**: Do note that the macOS kernel only supports a maximum of 64 threads. So for baller setups please be aware. And for dual socket users, you will need to use [AppleMCEReporterDisabler](https://github.com/acidanthera/bugtracker/files/3703498/AppleMCEReporterDisabler.kext.zip) in macOS Catalina
 
 * Intel Atoms
 * Intel Celerons
