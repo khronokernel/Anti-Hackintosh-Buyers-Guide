@@ -37,7 +37,7 @@ Note for HEDT: Support for these platforms including server boards are much bett
 
 * MSI(Weird Memory Layout and just really poor ACPI programming, many Z390 systems are unbootable on Clover)
 * AsRock(non-native USB controller)
-
+* Gigabyte(specifically Z390, the horrid memory maps make it so you can't even have the iGPU enabled)
 
 ## AMD Chipset boards
 
