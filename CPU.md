@@ -7,13 +7,11 @@ Common issues with AMD:
    * some fixes can be found here: [Adobe Fixes](https://adobe.amd-osx.com/)
    * Do note these fixes just disable functionality, they're not real fixes
 * Virtual Machine running off of AppleHV's framework will not work(ie: Parallels 15)
-   * VirtualBox works fine as its Java based
+   * VirtualBox works fine as it doesn't use AppleHV
 * Docker broken
-   * Docker toolbox is the only solution, many feautures are unavailble with this
+   * Docker toolbox is based off of VirtualBox, many feautures are unavailble with this
 * Xcode AppleWatch simulator is broken in Catalina
    * Mojave works fine
-* Blender 2.8.0+ won't work
-   * 2.7.9 is last good version
 * Microphone input is not availble with AppleALC requiring VoodooHDA(quite a bit worse audio quality and overall instability)
 * Audio Drift issues on Ryzen APUs(G series Chips)
    * USB DAC is only fix besides new CPU
