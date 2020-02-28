@@ -4,10 +4,12 @@ Certain consumer NICs don't have support such as:
 * Realtek L8200A(Only found in Asus boards)
 * Realtek RTL8125(2.5Gbe, mostly found on higher end gaming boards)
 
-Note: Newer Intel chipsets based off of I211-AT will need the [I211-AT SmallTree kext](https://cdn.discordapp.com/attachments/390417931659378688/556912824228773888/SmallTree-Intel-211-AT-PCIe-GBE.kext.zip)
+Note: Newer Intel chipsets based off of I211-AT will need the [I211-AT SmallTree kext](https://github.com/khronokernel/SmallTree-I211-AT-patch/releases)
 
 
-The issues come in when you either involve onboard server NICs or dedicated hardware like Mellanox's MNPA19-XTR 10Gbe NIC. You need to be quite vigilante and see if either the manufactures or the Hackintosh community have developed drivers, or instead, you can take the safe route and grab a 10Gbe Aquantia AQtion AQC-107 NIC as these are shipped in the iMacPro1,1 so full native support. [SmallTree](https://www.small-tree.com/categories/10gb-ethernet-cards/) is the other popular option
+The issues come in when you either involve onboard server NICs or dedicated hardware like Mellanox's MNPA19-XTR 10Gbe NIC. You need to be quite vigilante and see if either the manufactures or the Hackintosh community have developed drivers, or instead, you can take the safe route and grab a 10Gbe Aquantia AQtion AQC-107 NIC as these are shipped in the iMacPro1,1, MacMini8,1 and Macpro7,1 so full native support. Note that [certain brands need patches](https://www.insanelymac.com/forum/topic/330614-aquantia-10-gb-ethernet-support-thread-10132-upwards/)
+
+[SmallTree](https://www.small-tree.com/categories/10gb-ethernet-cards/) is the other popular option
 
 **NICs cards to avoid**
 
