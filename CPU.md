@@ -40,7 +40,7 @@ With Intel, the thanks to most of the CPUs being quite similar they have support
 * Intel X79/LGA 2011
 * Intel X99/LGA 2011-V3
 * Intel X299/LGA-2066
-`
+
 ## Unsupported CPUs
 
 So with outright unsupported CPUs, you're split into 2 camps: Either too old to run or too new that patches aren't supported
