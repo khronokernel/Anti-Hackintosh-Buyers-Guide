@@ -1,4 +1,4 @@
-**CPUs to avoid:**
+## CPUs to avoid:
 
 While AMD CPUs can work but we advise against them due to numerous issues still plaguing them as they're not natively supported. They require quite a bit more work to get setup but for those who like would prefer AMD there is the [AMD Vanilla Guide](https://vanilla.amd-osx.com). 
 
@@ -41,3 +41,29 @@ With Intel, the thanks to most of the CPUs being quite similar they have support
 * Intel X99/LGA 2011-V3
 * Intel X299/LGA-2066
 `
+## Unsupported CPUs
+
+So with outright unsupported CPUs, you're split into 2 camps: Either too old to run or too new that patches aren't supported
+
+**Too old to run**:
+
+This mainly concists of CPUs that are missing the SSE4.2 instruction set required for Mojave and newer, you can get around this by replacing the telemetry plugin but not ideal. See [trashOS repo](https://github.com/khronokernel/trashOS) for more info
+
+* Wolfdale (Intel Core2 Duo series)
+   * E7xxx
+   * E8xxx
+* Yorkfeild (Intel Core2 Quad series)
+   * E8xxx
+   * E9xxx
+
+Then there's the CPUs that are missing the SSE4.1 and older instruction sets, with these support is stuck an OS X 10.11 El Capitan
+
+
+**Too new to run**
+
+Well with this, the only current solution is to run it in a KVM, this is due to the current kernel patches not supporting 19h
+
+* 3rd Gen Threadripper
+   * 3960X
+   * 3970X
+   * 3990X(the macOS kernel doesn't even support more than 64 threads)
