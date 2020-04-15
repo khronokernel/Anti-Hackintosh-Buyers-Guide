@@ -1,22 +1,16 @@
 # Storage
 
-Storage is a section that can be quite confusing as there a lot of mixed reports regarding PCIe/NVMe based devices, many of these reports are based off old information from back when PCIe/NVMe drives were not natively supported like block size mattering or require kexts/.efi drivers. Well, High Sierra brought native support for these types of drives but certain ones still do not work and can cause instability if not removed/blocked out at an ACPI level. 
+**Attention to all users, please note this guide and other khronokernel sites will be shutting down on April 16th, 2020. Reason for this is we've decided to move the guides to a dedicated organization to help simplify the hackintosh process and provide a single, trusted source for hackintosh information. This new organization will be known as [Dortania](https://github.com/dortania).**
 
-The other big issue surrounds all Samsung NVMe drives, specifically that they're known to slow down macOS, not play well with TRIM and even create instability at times. This is due to the Pheonix controller found on Samsung drives that macOS isn't too fond of, much preferring the Phison controller found in WD SN750's and Sabrent Rocket drives. The easiest way to see this is with boot up, most systems running Samsung drives will have extra long boot times and have their drives run hotter due to the software TRIM failing(hardware TRIM still should be enabled but no partiality). Also some older Intel drives and Kingston NVMe drives also experience these issues.
+Links to the new sites:
 
-And while not an issue anymore, do note that all of Apple's PCIe drives are 4k sector-based so for best support only choose drives with such sectors.
+* [OpenCore Desktop Guide](https://dortania.github.io/OpenCore-Desktop-Guide/)
+* [Getting Started with ACPI](https://dortania.github.io/Getting-Started-With-ACPI/)
+* [GPU Buyers Guide](https://dortania.github.io/GPU-Buyers-Guide/)
+* [Wireless Buyers Guide](https://dortania.github.io/Wireless-Buyers-Guide/)
+* [Anti-Hackintosh Buyers Guide](https://dortania.github.io/Anti-Hackintosh-Buyers-Guide/)
 
-**Note for laptop users**: Intel SSDs don't always play nicely with laptops and can cause issues, avoid when possible
 
-**SSDs that aren't supported AT ALL**
+If you're looking for this guide, you can find it here:
 
-* Any eMMC based SSD(Commonly found in netbooks)
-* ~~Samsung PM981~~ (Commonly found in OEM systems like laptops)
-   * PM981 has been fixed with [NVMeFix](https://github.com/acidanthera/NVMeFix/releases) ver. 1.0.2
-
-**SSDs to avoid**
-
-Samsung:
-* Samsung 970 Evo Plus (While not natively supported OOB, a [firmware update from Samsung](https://www.samsung.com/semiconductor/minisite/ssd/download/tools/) will allow these drives to operate in macOS)
-
-For all NVme SSDs, its recommended to use [NVMeFix.kext](https://github.com/acidanthera/NVMeFix) to fix power and energy consumption on these drives
+# [Anti-Hackintosh-Buyers-Guide](https://dortania.github.io/Anti-Hackintosh-Buyers-Guide/)
