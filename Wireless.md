@@ -1,13 +1,14 @@
-For wireless, keep in mind that macOS has a very limited selection for native Wifi and Bluetooth cards but Midi has a great list on supported models that you can find in the [r/Hackintosh FAQ](https://www.reddit.com/r/hackintosh/wiki/faq#wiki_wifi_compatibility). But for those who are either motherboard shopping or just looking for dedicated wireless will need to keep in mind that the following wireless cards are not supported:
+**Attention to all users, please note this guide and other khronokernel sites will be shutting down on April 16th, 2020. Reason for this is we've decided to move the guides to a dedicated organization to help simplify the hackintosh process and provide a single, trusted source for hackintosh information. This new organization will be known as [Dortania](https://github.com/dortania).**
 
-**Wireless cards that aren't supported AT ALL**
+Links to the new sites:
 
-* Any Intel based wireless(Bluetooth sometimes works but it's inconcistent and seems to be on a per system basis)
-* Any Killer based wireless
+* [OpenCore Desktop Guide](https://dortania.github.io/OpenCore-Desktop-Guide/)
+* [Getting Started with ACPI](https://dortania.github.io/Getting-Started-With-ACPI/)
+* [GPU Buyers Guide](https://dortania.github.io/GPU-Buyers-Guide/)
+* [Wireless Buyers Guide](https://dortania.github.io/Wireless-Buyers-Guide/)
+* [Anti-Hackintosh Buyers Guide](https://dortania.github.io/Anti-Hackintosh-Buyers-Guide/)
 
-**Wireless cards to avoid**
 
-* Any USB based(Ralink and Realtek) as these generally aren't as reliable and some macOS functions like Hand-Off and AppleWatch Unlock may not function correctly
+If you're looking for this guide, you can find it here:
 
-
-And for those who want a list of supported models can check out the [Wireless Buyers Guide](https://khronokernel-7.gitbook.io/wireless-buyers-guide/)
+# [Anti-Hackintosh-Buyers-Guide](https://dortania.github.io/Anti-Hackintosh-Buyers-Guide/)

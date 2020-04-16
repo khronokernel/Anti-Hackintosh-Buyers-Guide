@@ -1,1 +1,14 @@
-With RAM, it's generally the same logic for Windows: Make sure the CPU's memory controller can support the speeds you wish to run. macOS seems to be a bit more memory sensitive than Windows so you may get random lock-ups/kernel panics and the more memory you add, the more you need to lower the frequency to ease the memory controller. Generally, 32GB 3000Mhz will run just fine on an i7 8700k but an i7 6700k may have to drop to 2666Mhz for stability reasons
+**Attention to all users, please note this guide and other khronokernel sites will be shutting down on April 16th, 2020. Reason for this is we've decided to move the guides to a dedicated organization to help simplify the hackintosh process and provide a single, trusted source for hackintosh information. This new organization will be known as [Dortania](https://github.com/dortania).**
+
+Links to the new sites:
+
+* [OpenCore Desktop Guide](https://dortania.github.io/OpenCore-Desktop-Guide/)
+* [Getting Started with ACPI](https://dortania.github.io/Getting-Started-With-ACPI/)
+* [GPU Buyers Guide](https://dortania.github.io/GPU-Buyers-Guide/)
+* [Wireless Buyers Guide](https://dortania.github.io/Wireless-Buyers-Guide/)
+* [Anti-Hackintosh Buyers Guide](https://dortania.github.io/Anti-Hackintosh-Buyers-Guide/)
+
+
+If you're looking for this guide, you can find it here:
+
+# [Anti-Hackintosh-Buyers-Guide](https://dortania.github.io/Anti-Hackintosh-Buyers-Guide/)
